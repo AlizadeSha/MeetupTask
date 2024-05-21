@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model UpdateSpeakerVM
+<form method="post">
+    <div class="card-body">
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Name</label>
+            <input class="form-control" asp-for="Name">
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Description</label>
+            <input class="form-control" asp-for="Description">
+        </div>
+        <div class="mb-3">
+            <label asp-for="ImgUrl" class="form-label">Image UrL</label>
+            <input class="form-control" asp-for="ImgUrl">
+        </div>
+        <div class="mb-3">
+            <label asp-for="SosialUrl1" class="form-label">Sosial Media Link 1</label>
+            <input class="form-control" asp-for="SosialUrl1">
+        </div>
+        <div class="mb-3">
+            <label asp-for="SosialUrl2" class="form-label">Sosial Media Link 2</label>
+            <input class="form-control" asp-for="SosialUrl2">
+        </div>
+        <div class="mb-3">
+            <label asp-for="SosialUrl3" class="form-label">Sosial Media Link 3</label>
+            <input class="form-control" asp-for="SosialUrl3">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
